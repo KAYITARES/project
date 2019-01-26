@@ -1,1 +1,9 @@
+<h1>RECIT</h1>
+<hr>
 
+<ul>
+    <div *ngFor='let goal of goals'>
+        <li >{{quote.name}}</li> 
+        <app-quote-details [quote]='quote'></app-quote-details>
+    </div>
+</ul>
