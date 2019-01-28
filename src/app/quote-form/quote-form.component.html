@@ -4,25 +4,37 @@
             <div class="form-group">
 
     
-        <label for="title">Quator Title:</label>
-        <input type="text" required class="form-control" id="title">
-        </div>
+        <label for="title">Quate Title:</label>
+        <input type="text"  class="form-control" id="title" [(ngModel)]="newQuote.title" name="title" #title="ngModel" required>
+        <div [hidden]="title.valid || title.pristine" class="alert alert-danger">
+            <p> Title is Required</p>
+      </div>
+
 
         <div class="form-group">
           <label for="author">Author Name</label>
-          <input type="text" required class="form-control" id="title">
-        </div>
+          <input type="text"  class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel" required>
+          <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+              <p> Author name is Required</p>
+              </div>
+
 
         <div class="form-group">
             <label for="complete">Date</label>
-            <input type='date' id="complete" required>
-            
-        </div>
+            <input type="text"  class="form-control" id="completeDate" [(ngModel)]="newQuote.completeDate" name="completeDate" #title="ngModel" required>
+        <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
+            <p> Date is Required</p>
+            </div>
 
-          <div class="form-group">
+          
+          
+            <div class="form-group">
 
               <label for="description">Quator</label>
-              <textarea class="form-control" id="description" rows="4" required></textarea>
+              <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuote.description" name="quotes" #quotes="ngModel" required></textarea>
+        <div [hidden]="quotes.valid || quotes.pristine" class="alert alert-danger">
+        <p>quotes is Required</p>
+      </div>
               
           </div>
           <button type="submit" class="btn btn-primary btn-lg" id="addbtn">Add quote</button>
