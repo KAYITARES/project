@@ -1,7 +1,9 @@
 <div class="container-fluid">
-    <div >
+    <div class="row">
+        <form #goalForm='ngForm'>
+            <div class="form-group">
 
-      <div class="form-group">
+    
         <label for="title">Quator Title:</label>
         <input type="text" required class="form-control" id="title">
         </div>
@@ -23,6 +25,7 @@
               <textarea class="form-control" id="description" rows="4" required></textarea>
               
           </div>
-
+          <button type="submit" class="btn btn-primary btn-lg" id="addbtn">Add quote</button>
+</form>
   </div>
 </div>

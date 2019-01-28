@@ -1,6 +1,6 @@
 
 <h1>RECIT</h1>
-<hr>
+
 
 <div class="row">
     
@@ -11,9 +11,16 @@
            
         <div class=col-md-6 id="qot" >
             <ol>
+                
                 <div *ngFor='let quote of quotes;let i = index' class="list">
-                    <li id="{{i}}" appStrikethrough>{{quote.title}}</li> 
-                     <button (click)='toogleDetails(i)' class="btn btn-info">Details</button>
+                        <div class="row">
+                                <div class="col-md-6">
+                    <li id="{{i}}" appStrikethrough class="num">{{quote.title}}</li> 
+                </div>
+                <div class="col-md-6">
+                     <button (click)='toogleDetails(i)' class="btn btn-info btn-md" id="detail">Details</button>
+                    </div>
+                </div>
                       <app-quote-details *ngIf="quote.showAuthor" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
         <!-- <p style="margin-top: 20%">This goal will be completed in {{quote.completeDate|dateCount}} days</p> -->
                 </div></ol></div>
