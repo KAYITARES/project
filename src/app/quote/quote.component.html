@@ -2,9 +2,11 @@
 <h1>RECIT</h1>
 <hr>
 <ol>
-    <div *ngFor='let quote of quotes;let i = index'>
-        <li id="{{i}}" appStrikethrough>{{quote.title}} due on {{quote.completeDate|date|uppercase}}</li> 
+    <div *ngFor='let quote of quotes;let i = index' class="list">
+        <li id="{{i}}" appStrikethrough>{{quote.title}}</li> 
         <button (click)='toogleDetails(i)'>Details</button>
+        
         <app-quote-details *ngIf="quote.showAuthor" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
+        <!-- <p style="margin-top: 20%">This goal will be completed in {{quote.completeDate|dateCount}} days</p> -->
     </div>
 </ol>
