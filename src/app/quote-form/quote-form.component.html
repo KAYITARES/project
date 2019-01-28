@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="row">
-        <form (ngSubmit)='submitGoal()' #goalForm='ngForm'>
+        <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
             <div class="form-group">
               <label for="title">Quate Title:</label>
               <input type="text"  class="form-control" id="title" [(ngModel)]="newQuote.title" name="title" #title="ngModel" required>
@@ -21,7 +21,7 @@
 
            <div class="form-group">
                <label for="complete">Date</label>
-               <input type="text"  class="form-control" id="completeDate" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
+               <input type="date"  class="form-control" id="completeDate" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
               <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
                   <p> Date is Required</p>
               </div>

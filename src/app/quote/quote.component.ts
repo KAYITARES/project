@@ -13,6 +13,12 @@ export class QuoteComponent implements OnInit {
     new Quote("universe","“Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.” "," Albert Einstein",new Date(2019,0,26)),
     new Quote("feelings","“Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.” "," Bernard M. Baruch",new Date(2019,0,26)),
   ]
+  addNewQuote(quote){
+    let quoteLength=this.quotes.length;
+    quote.id=quoteLength+1;
+    quote.completeDate= new Date(quote.completeDate)
+    this.quotes.push(quote)
+  }
 
   completeQuote(isComplete,index){
     if (isComplete){
