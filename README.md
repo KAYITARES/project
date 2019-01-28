@@ -34,4 +34,4 @@ No bugs so far. If found, email me at developer.waweru@gmail.com
 Contact me on cyntkayitare@gmail.com for any comments, reviews or advice.
 
 ### License
-MIT[http://choosealisence.com/licenses/mit/Copyright] (c) **KAYITARE Cynthia**
+**[MIT](http://choosealisence.com/licenses/mit/Copyright) ** (c) **KAYITARE Cynthia**
