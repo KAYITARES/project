@@ -1,13 +1,13 @@
-<div>
+<div class="det">
     <h5>Quote: {{quote.quotes}}</h5>
     <p>Author:~ {{quote.author}}</p>
     <p>Date: {{quote.completeDate|date|uppercase}}</p>
     <p>upvote :{{upvote}}</p>
     <div>
-        <button (click)='upvotes($event,i)'>upvote</button>
-        <button (click) = 'quoteComplete(true)'>Delete</button>
+        <button (click)='upvotes($event,i)' class="btn btn-success">upvote</button>
+        <button (click) = 'quoteComplete(true)' class="btn btn-danger">Delete</button>
     </div>
-    <p>this post was created {{quote.completeDate|dateCount}} days</p>
+    <p>{{quote.completeDate|dateCount}} days ago</p>
 </div>
 
 

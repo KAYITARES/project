@@ -4,6 +4,7 @@ import{Quote} from './quote'
   selector: 'app-root',
   templateUrl: './app.component.html',
   
+  
 })
 export class AppComponent {
     quotes = [

@@ -1,12 +1,21 @@
 
 <h1>RECIT</h1>
 <hr>
-<ol>
-    <div *ngFor='let quote of quotes;let i = index' class="list">
-        <li id="{{i}}" appStrikethrough>{{quote.title}}</li> 
-        <button (click)='toogleDetails(i)'>Details</button>
-        
-        <app-quote-details *ngIf="quote.showAuthor" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
+
+<div class="row">
+    
+        <div class=col-md-6 id="form">
+                <app-quote-form></app-quote-form>
+            </div>
+
+           
+        <div class=col-md-6 id="qot" >
+            <ol>
+                <div *ngFor='let quote of quotes;let i = index' class="list">
+                    <li id="{{i}}" appStrikethrough>{{quote.title}}</li> 
+                     <button (click)='toogleDetails(i)' class="btn btn-info">Details</button>
+                      <app-quote-details *ngIf="quote.showAuthor" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
         <!-- <p style="margin-top: 20%">This goal will be completed in {{quote.completeDate|dateCount}} days</p> -->
-    </div>
-</ol>
+                </div></ol></div>
+            </div>
+        
