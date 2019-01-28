@@ -20,7 +20,7 @@
 
 
            <div class="form-group">
-               <label for="complete">Date</label>
+               <label for="date">Date</label>
                <input type="date"  class="form-control" id="completeDate" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
               <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
                   <p> Date is Required</p>
@@ -30,12 +30,19 @@
           
           
             <div class="form-group">
-               <label for="description">Quator</label>
+               <label for="description">Quate</label>
                <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuote.quotess" name="quotess" #quotess="ngModel" required></textarea>
               <div [hidden]="quotess.valid || quotess.pristine" class="alert alert-danger">
                 <p>quotes is Required</p>
               </div>
            </div>
+           <div class="form-group">
+              <label for="submittedPerson">Submitted by</label>
+              <input type="text"  class="form-control" id="personSubmission" [(ngModel)]="newQuote.sub" name="sub" #sub="ngModel" required>
+             <div [hidden]="sub.valid || sub.pristine" class="alert alert-danger">
+                 <p> Submission Name is Required</p>
+             </div>
+         </div>
           <button type="submit" class="btn btn-primary btn-lg" id="addbtn">Add quote</button>
        </form>
   </div>

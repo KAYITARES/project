@@ -17,6 +17,11 @@ export class QuoteDetailsComponent implements OnInit {
   upvotes(upvote){
     this.upvote+=1;
   }
+  public downvote:number=0;
+  downvotes(downvote){
+    this.downvote+=1;
+  } 
+
 
   constructor() { }
 

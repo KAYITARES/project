@@ -1,6 +1,22 @@
-#delete{
-    margin-left:10%;
-}
+
 .det{
     margin-left:25%;
+    font-size:18px;
+    color:slategray;
+}
+#subdate{
+    font-size:18px;
+    color:slategray;
+
+}
+#btnUp{
+    margin-left:30%;
+}
+h4{
+    color:cyan;
+    margin-left:15%;
+}
+
+#dwnVote{
+    margin:30px;
 }
