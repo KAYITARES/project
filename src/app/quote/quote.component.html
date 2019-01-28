@@ -3,8 +3,8 @@
 <hr>
 <ol>
     <div *ngFor='let quote of quotes;let i = index'>
-        <li appStrikethrough>{{quote.name}}</li> 
+        <li id="{{i}}" appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</li> 
         <button (click)='toogleDetails(i)'>Details</button>
-        <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= ' completeQuote($event,i)'></app-quote-details>
+        <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
     </div>
 </ol>
