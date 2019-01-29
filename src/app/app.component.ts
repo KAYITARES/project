@@ -8,7 +8,6 @@ import{Quote} from './quote'
 })
 export class AppComponent {
     quotes = [
-      
       new Quote("Kayitare","care for your life","“I'm selfish, impatient and a little insecure. `I make mistakes, I am out of control and at times hard to handle.` But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.”","Marilyn Monroe",0,0,new Date(2019,0,26)),
       new Quote("Kayitare","feelings","“Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.” "," Bernard M. Baruch",0,0,new Date(2019,0,26)),
       new Quote("Kayitare","Imana ni byose","Byose Bihira Abakunda IMANA","kayitare",0,0,new Date(2019,0,26)),
