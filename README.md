@@ -21,7 +21,8 @@ there is also a paragraph that shows the time passed for that quate post.
 **[Click here](https://KAYITARES.github.io/quote)** to see the live site.
 
 ## Known Bugs
-No bugs so far. If found, email me at developer.waweru@gmail.com
+No bugs so far. but you can steel make a research on how the one who has more upvoted is the one who will be placed at the top.
+If found, email me at cyntkayitare@gmail.com
 
 ## Technologies Used
     1. Angular

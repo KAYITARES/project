@@ -17,7 +17,6 @@ export class QuoteDetailsComponent implements OnInit {
   upvotes(){
     this.quote.upvote+=1;
   }
-  public 
   downvotes(){
     this.quote.downvote+=1;
   } 
