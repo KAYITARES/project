@@ -14,11 +14,11 @@ there is also a paragraph that shows the time passed for that quate post.
 ##Setup Instruction
 * to access my website you have to have a computer or smart phone
 * access internet on that device
-* go to browser and type https://KAYITARES.github.io/quote
+* go to browser and type https://KAYITARES.github.io/project
 * you have reach on it.
 
 ## Preview
-**[Click here](https://KAYITARES.github.io/quote)** to see the live site.
+**[Click here](https://KAYITARES.github.io/project)** to see the live site.
 
 ## Known Bugs
 No bugs so far. but you can steel make a research on how the one who has more upvoted is the one who will be placed at the top.
